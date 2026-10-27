@@ -1,0 +1,26 @@
+# Entornos virtuales (Virtual Environments)
+.venv/
+venv/
+ENV/
+env/
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Caché y reportes de Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Entorno de desarrollo / VS Code
+.vscode/
+*.swp
+*.tmp
+
+# Archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
