@@ -2,13 +2,16 @@
 
 class DuckResult:
 
+
+    #LOCATORS
+    ## TODO: Locator for result link and search input
+
     def __init__(self, browser):
 
         self.browser = browser
-        pass
 
     def title(self):
-        return ""
+        return self.browser.title
 
     def values(self):
         return ""
