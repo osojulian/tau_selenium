@@ -10,7 +10,7 @@ class DuckSearch:
     URL = 'https://duckduckgo.com'
 
     ## Locator as a constant
-    SEARCH_INPUT = (By.name, 'q')
+    SEARCH_INPUT = (By.NAME, 'q')
 
     def __init__(self, browser):
 

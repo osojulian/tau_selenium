@@ -2,7 +2,6 @@
 
 class DuckResult:
 
-
     #LOCATORS
     ## TODO: Locator for result link and search input
 
