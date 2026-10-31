@@ -4,20 +4,25 @@ import selenium
 from pages.result import DuckResult
 from pages.search import DuckSearch
 
-def test_duck_search(browser):
+
+@pytest.mark.parametrize("phrase", [
+    "panda",
+    "tiger",
+    "selenium"
+])
+def test_duck_search(browser, phrase):
 
 
     ## Instance of class Result, Search
     search_page = DuckSearch(browser)
     result_page = DuckResult(browser)
-    phrase = "Panda"
 
     #### Follow structure Given, When, then
 
     #Given the duck home page is displayed
     search_page.load()
 
-    #When the user searches for "Panda"
+    #When the user searches for the phrase
     search_page.search(phrase)
 
     ## Asserts for the results, compare
@@ -25,7 +30,7 @@ def test_duck_search(browser):
     assert phrase in result_page.title()
 
 
-    # TODO: I have to find the locators for this values and code
+    # I have to find the locators for this values and code
     
 
     #And the search result query is "Panda"
